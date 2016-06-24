@@ -79,7 +79,7 @@ function replaceInFile(file, callback) {
 
             var namespace = namespaces[0].new + '\\' + parts.join('\\');
 
-            content = content.replace('<?php', '<?php\r\nnamespace ' + namespace + '\r\n;');
+            content = content.replace('<?php', '<?php\r\nnamespace ' + namespace + ';\r\n');
             content = content.replace('class \\' + namespace + '\\', 'class ');
 
             for(var search in replacements){

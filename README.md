@@ -1,11 +1,10 @@
 # TYPO3 Namespace Converter
 
-You have old TYPO3 extensions that returned from their grave and want to use them in new TYPO3 6 and 7 projects?
+You have old TYPO3 extensions that returned from their grave and want to use them in new TYPO3 6 or 7 projects?
 To bad, because you have to namespace all your classes by hand...
 
-Really?
-
-NO! Now you can use this little but pretty handy node tool to migrate all your TYPO3 PHP junks into sexy PSR4 compliant classes.
+*Really*?
+**NO**! Now you can use this little but pretty handy node tool to migrate all your TYPO3 PHP junks into sexy PSR4 compliant classes.
 
 # Install
 

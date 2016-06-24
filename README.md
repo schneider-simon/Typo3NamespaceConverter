@@ -14,7 +14,7 @@ NO! Now you can use this little but pretty handy node tool to migrate all your T
 
 # How to use
 
-    node main.js <old-namespace> <new-namespace> <folder-to-namespace-root>
+    node main.js <old-namespace> <new-namespace> <namespace-root-folder>
     
     Example:
     node main.js Tx_PackageName "Vendor\PackageName" "H:\Code\Project\some\sub\folder\Classes"

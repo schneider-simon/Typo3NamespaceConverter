@@ -11,6 +11,10 @@ var namespaces = [
     {old: 'Tx_Extbase', new: 'TYPO3\\CMS\\Extbase'}
 ];
 
+var replacements = {
+    't3lib_div': '\\TYPO3\\CMS\\Core\\Utility\\GeneralUtility'
+};
+
 var folder = args[2];
 
 var walk = require('walk');
@@ -75,8 +79,13 @@ function replaceInFile(file, callback) {
 
             var namespace = namespaces[0].new + '\\' + parts.join('\\');
 
-            content = content.replace('<?php', '<?php\r\nnamespace ' + namespace + ';');
+            content = content.replace('<?php', '<?php\r\nnamespace ' + namespace + '\r\n;');
             content = content.replace('class \\' + namespace + '\\', 'class ');
+
+            for(var search in replacements){
+                var replace = replacements[search];
+                content = content.replace(search, replace);
+            }
 
             callback(file, content);
         }

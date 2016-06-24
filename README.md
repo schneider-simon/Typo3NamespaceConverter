@@ -18,3 +18,9 @@ NO! Now you can use this little but pretty handy node tool to refactor all your 
     
     Example:
     node main.js Tx_PackageName "Vendor\PackageName" "H:\Code\Project\some\sub\folder\Classes"
+    
+# How it Works
+
+- Replaces Tx_PackageName_Controllers_MainController with -> Vendor\PackageName\Controllers\MainController.
+- Replaces Tx_Extbase... with -> TYPO3\CMS\Extbase.
+- Adds a `namespace` line below the opening tag.

@@ -5,7 +5,7 @@ To bad, because you have to namespace all your classes by hand...
 
 Really?
 
-NO! Now you can use this little but pretty handy node tool to refactor all your TYPO3 PHP junks into sexy PSR4 conform classes.
+NO! Now you can use this little but pretty handy node tool to migrate all your TYPO3 PHP junks into sexy PSR4 compliant classes.
 
 # Install
 
@@ -21,6 +21,6 @@ NO! Now you can use this little but pretty handy node tool to refactor all your 
     
 # How it Works
 
-- Replaces Tx_PackageName_Controllers_MainController with -> Vendor\PackageName\Controllers\MainController.
-- Replaces Tx_Extbase... with -> TYPO3\CMS\Extbase.
+- Replaces Tx_PackageName_Controllers_MainController with Vendor\PackageName\Controllers\MainController.
+- Replaces Tx_Extbase... with TYPO3\CMS\Extbase.
 - Adds a `namespace` line below the opening tag.
